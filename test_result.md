@@ -101,3 +101,110 @@
 #====================================================================================================
 # Testing Data - Main Agent and testing sub agent both should log testing data below this section
 #====================================================================================================
+
+user_problem_statement: "Build a radio/audio player called Skiza that can upload music and podcasts fast and can be played even when the user moves to a different tab in the website. Should be able to quickly embed on my website. The interface to be frosted glass using bordas and proxima as main fonts."
+
+backend:
+  - task: "Audio file upload with chunked uploads"
+    implemented: false
+    working: "NA"
+    file: "server.py"
+    stuck_count: 0
+    priority: "high"
+    needs_retesting: false
+    status_history:
+      - working: "NA"
+        agent: "main"
+        comment: "Not yet implemented - planning phase"
+        
+  - task: "Audio metadata storage in MongoDB"
+    implemented: false
+    working: "NA"
+    file: "server.py"
+    stuck_count: 0
+    priority: "high"
+    needs_retesting: false
+    status_history:
+      - working: "NA"
+        agent: "main"
+        comment: "Not yet implemented - planning phase"
+
+  - task: "Playlist management APIs"
+    implemented: false
+    working: "NA"
+    file: "server.py"
+    stuck_count: 0
+    priority: "medium"
+    needs_retesting: false
+    status_history:
+      - working: "NA"
+        agent: "main"
+        comment: "Not yet implemented - planning phase"
+
+frontend:
+  - task: "Core audio player with background playback"
+    implemented: false
+    working: "NA"
+    file: "App.js"
+    stuck_count: 0
+    priority: "high"
+    needs_retesting: false
+    status_history:
+      - working: "NA"
+        agent: "main"
+        comment: "Not yet implemented - this is the most critical feature"
+
+  - task: "File upload UI with drag-and-drop"
+    implemented: false
+    working: "NA"
+    file: "App.js"
+    stuck_count: 0
+    priority: "high"
+    needs_retesting: false
+    status_history:
+      - working: "NA"
+        agent: "main"
+        comment: "Not yet implemented - planning phase"
+
+  - task: "Frosted glass UI with custom fonts"
+    implemented: false
+    working: "NA"
+    file: "App.css"
+    stuck_count: 0
+    priority: "medium"
+    needs_retesting: false
+    status_history:
+      - working: "NA"
+        agent: "main"
+        comment: "Not yet implemented - planning phase"
+
+  - task: "Embed functionality widget"
+    implemented: false
+    working: "NA"
+    file: "App.js"
+    stuck_count: 0
+    priority: "low"
+    needs_retesting: false
+    status_history:
+      - working: "NA"
+        agent: "main"
+        comment: "Not yet implemented - planning phase"
+
+metadata:
+  created_by: "main_agent"
+  version: "1.0"
+  test_sequence: 0
+  run_ui: false
+
+test_plan:
+  current_focus:
+    - "Core audio player with background playback"
+    - "Audio file upload with chunked uploads"
+    - "Audio metadata storage in MongoDB"
+  stuck_tasks: []
+  test_all: false
+  test_priority: "high_first"
+
+agent_communication:
+  - agent: "main"
+    message: "Starting Skiza audio player development. Planning to implement core audio player first as it's the most technically challenging part, then file upload system, then UI/UX improvements."
