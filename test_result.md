@@ -240,9 +240,12 @@ metadata:
 
 test_plan:
   current_focus:
-    - "Core audio player with background playback"
     - "Audio file upload with chunked uploads"
     - "Audio metadata storage in MongoDB"
+    - "Audio streaming endpoint"
+    - "Core audio player with background playback"
+    - "File upload UI with drag-and-drop"
+    - "Music library management"
   stuck_tasks: []
   test_all: false
   test_priority: "high_first"
