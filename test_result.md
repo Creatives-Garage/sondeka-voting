@@ -106,40 +106,61 @@ user_problem_statement: "Build a radio/audio player called Skiza that can upload
 
 backend:
   - task: "Audio file upload with chunked uploads"
-    implemented: false
+    implemented: true
     working: "NA"
     file: "server.py"
     stuck_count: 0
     priority: "high"
-    needs_retesting: false
+    needs_retesting: true
     status_history:
       - working: "NA"
         agent: "main"
         comment: "Not yet implemented - planning phase"
+      - working: "NA"
+        agent: "main"
+        comment: "Implemented audio upload endpoint with GridFS storage, multipart form data handling, and file validation"
         
   - task: "Audio metadata storage in MongoDB"
-    implemented: false
+    implemented: true
     working: "NA"
     file: "server.py"
     stuck_count: 0
     priority: "high"
-    needs_retesting: false
+    needs_retesting: true
     status_history:
       - working: "NA"
         agent: "main"
         comment: "Not yet implemented - planning phase"
+      - working: "NA"
+        agent: "main"
+        comment: "Implemented AudioMetadata model with UUID, title, artist, duration, file_size, mime_type, and GridFS file_id"
+
+  - task: "Audio streaming endpoint"
+    implemented: true
+    working: "NA"
+    file: "server.py"
+    stuck_count: 0
+    priority: "high"
+    needs_retesting: true
+    status_history:
+      - working: "NA"
+        agent: "main"
+        comment: "Implemented streaming endpoint with GridFS file retrieval, proper headers, and chunk-based streaming"
 
   - task: "Playlist management APIs"
-    implemented: false
+    implemented: true
     working: "NA"
     file: "server.py"
     stuck_count: 0
     priority: "medium"
-    needs_retesting: false
+    needs_retesting: true
     status_history:
       - working: "NA"
         agent: "main"
         comment: "Not yet implemented - planning phase"
+      - working: "NA"
+        agent: "main"
+        comment: "Implemented playlist CRUD operations with PlaylistItem model"
 
 frontend:
   - task: "Core audio player with background playback"
